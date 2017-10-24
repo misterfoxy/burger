@@ -1,6 +1,6 @@
 const connection = require('./connection.js');
 
-function printQuestions(num) =>{
+function printQuestions(num){
   let arr = [];
 
   for(var i =0; i<num; i++){
