@@ -17,7 +17,7 @@ let connection;
 
 connection.connect(function(error){
   if(error){
-    throw err;
+    throw error;
   }
   console.log('Connected to MySQL database as id ' + connection.threadId);
 });
