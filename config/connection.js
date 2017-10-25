@@ -1,5 +1,7 @@
+// import dependency allowing for database connection
 const mysql = require('mysql');
 
+//initialize connection variable, run conditional for which connection to use
 let connection;
 
   if(process.env.JAWSDB_URL) {
@@ -15,11 +17,13 @@ let connection;
     });
   }
 
-connection.connect(function(error){
+// connect to database, display threadID in console
+connection.connect((error) => {
   if(error){
     throw error;
   }
   console.log('Connected to MySQL database as id ' + connection.threadId);
 });
 
+//export connection module
 module.exports = connection;

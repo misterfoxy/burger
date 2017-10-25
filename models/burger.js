@@ -1,7 +1,11 @@
+// import custom ORM
 const orm = require('../config/orm.js');
 
+// initialize model for MVC
 const burger = {
-  selectAll: (cb) =>{
+  // assign selectAll function, passing callback
+  selectAll: (cb) => {
+    // pass 'burgers' table and HTTP RESPONSE as parameters
     orm.selectAll('burgers', (res) =>{
       cb(res);
     });
