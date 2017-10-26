@@ -7,11 +7,10 @@ This application is a basic full stack web app, allowing users to Create, Read, 
 
 The user may enter any burger name to add it to the menu. This also adds the new burger entry into the MySQL database. The initial burger entry is added as *available* on the menu and placed on the left side of the screen. The user may then eat any burger by clicking on it, which moves it into the adjacent column and updates its status accordingly in the database.
 
-A user can choose to ask for seconds, and add the burger back to the uneaten column. Users can also clear the plate, and delete any burger that is in the eaten column.
 
 ## Demo
 
-The demo of the burger eating application can be found [here](http://michaelscottfox.com/).
+The demo of the burger eating application can be found [here](https://fast-hamlet-77655.herokuapp.com/).
 
 ## Installation
 
@@ -29,3 +28,5 @@ Finally, run the node server locally.
 	node server.js
 
 Now, open the local application on port 3000 at the URL: `http://localhost:3000/`.
+
+
